@@ -1,32 +1,249 @@
+    body {
+    background-color: #001120;
+}
+
+
 /*Navigation*/
 
 .navbar-brand img {
-    height: 4rem;
+    height: 4.5rem;
 }
 
 .navbar {
-    font-size: 1.15rem;
-    font-weight: 600;
-    letter-spacing: .2rem;
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
     font-family: 'Montserrat';
-    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .5);
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0)!important;
+    z-index: 10;
+    background-color: #00000050!important;
     /*whichever you want*/
     opacity: 1;
     /*0.5 determines transparency value*/
     filter: (opacity=1);
-}
-
-.navbar-item {
-    padding: .5rem;
+    width: 100%;
+    padding: 0;
 }
 
 .nav-link {
-    color: #dddcdc!important;
+    color: #ffffff!important;
 }
 
-.nav-link.active,
-.nav-link:hover {
+a.nav-link::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background: rgba(130, 177, 231, 0.616);
+    margin-top: 2px;
+    transition: all ease-in-out 250ms;
+}
+
+a.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link>a .nav-link.active {
     color: #4981b3!important;
 }
+
+.nav-link:hover {
+    text-shadow: 2px 2px 3px #000000;
+}
+
+
+/*End Navigation*/
+
+
+/*Carousel*/
+
+.carousel-caption {
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+
+.carousel-caption h1 {
+    font-size: 80px;
+    font-family: 'Rock Salt';
+    text-shadow: 3px 2px 1px #000000;
+}
+
+.carousel-caption p {
+    font-size: 19px;
+    font-family: 'Montserrat';
+    padding-top: 10px;
+}
+.btn.btn-primary.bigButton{
+    width: 200px;
+    font-size: 25px;
+    height: 54px;
+}
+ a.btn.btn-primary {
+    position: absolute;
+    left: 2%;
+    background: radial-gradient(circle, rgba(25, 98, 164, 1) 0%, rgba(14, 62, 106, 1) 100%, rgba(27, 60, 89, 1) 100%);
+    border: #000000;
+    font-size: 20px;
+    text-shadow: 3px 1px 3px #000000;
+    border-radius: 10px;
+    box-shadow: -2px 3px 4px rgb(0, 0, 0);
+    width: 11rem;
+    height:3rem;
+    font-family: 'Montserrat';
+    text-align: center;
+    padding-top: 10px;
+}
+
+a.btn.btn-primary:hover
+{
+    background: #c8e5ff!important;
+    color:rgb(0, 17, 29);
+    font-weight: bold;
+    text-shadow: 0px 0px 0px #000000;
+    transition: all ease-in-out 250ms;
+}
+
+/*End of Carousel*/
+
+
+/*About Us*/
+h1 {
+    font-family: 'Rock Salt';
+    color: #ffffff !important;
+    text-align: center;
+}
+
+h1.header::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25%;
+    background: rgba(235, 235, 235, 0.616);
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    left: 37%;
+}
+
+.aboutUs p {
+    font-size: 23px;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.aboutUs img{
+   width: 1000px;
+}
+    /*End of About Us*/
+
+    /*Classes*/
+     .bg-full {
+        position: relative;
+      }
+
+      .bg-full:before {
+        content:'';
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+        height:100%;
+        width: 100vw;
+        background-image: url(/img/classes.png);
+        background-size: cover;
+      }
+
+      html {
+       overflow-x: hidden;
+      }
+
+      .classes{
+          margin-right: 0;
+          margin-left:0;
+      }
+      .classDesc
+      {
+          background: rgb(0, 24, 45,.7)!important;
+          width:auto;
+          font-family: 'Montserrat';
+          color:#ffffff;
+          font-size: 25px;
+          font-weight: lighter;
+      }
+    /*End of Classes*/
+
+    /*Schools*/
+    .school{
+        background:rgb(199, 199, 199,.22);
+        text-align: center;
+        border-radius: 10%;
+        max-height: 20rem;
+        max-width: 19.5rem;
+        margin:20px;
+
+    }
+
+    .schoolImg{
+        height: 90%;
+    }
+    .schoolDesc{
+        background:rgb(197, 195, 195);
+        width: inherit;
+        height:100px;
+        border-radius: 0 0 20px 20px;
+        margin-right: 0;
+    }
+
+    .schoolDesc > h5{
+        font-family: 'Montserrat';
+        font-weight: 500;
+        letter-spacing: .5px;
+        font-size: 21px;
+        color:#001437;
+    }
+
+    .schoolDesc > a.btn.btn-primary{
+       left:25%;
+       font-size: 20px;
+       width: 10rem;
+       height:3rem;
+    }
+
+     /*End of Schools*/
+
+     /*Testimonials*/
+     .testimonials {
+        position: relative;
+      }
+
+      .testimonials:before {
+        content:'';
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+        height:100%;
+        width: 100vw;
+        background-image: url(/img/testimonials.png);
+        background-size: cover;
+      }
+
+      .testimonial{
+          color:#E6E6E6;
+          font-family: 'Montserrat';
+          font-size: 33px;
+          font-weight: 300;
+          font-style: italic;
+          padding:0 5rem 0 5rem!important;
+
+      }
+
+      .carousel-item.active,
+      .carousel-item-next,
+      .carousel-item-prev{
+      display:flex;
+     }
+     /*End of Testimonials*/
