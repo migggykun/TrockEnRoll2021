@@ -180,19 +180,19 @@ h1.header::after {
         background:rgb(199, 199, 199,.22);
         text-align: center;
         border-radius: 10%;
-        max-height: 20rem;
+        height: 22rem;
         max-width: 19.5rem;
         margin:20px;
 
     }
 
     .schoolImg{
-        height: 90%;
+        max-height: 90%;
     }
     .schoolDesc{
         background:rgb(197, 195, 195);
         width: inherit;
-        height:100px;
+        height: 30%;
         border-radius: 0 0 20px 20px;
         margin-right: 0;
     }
@@ -206,10 +206,10 @@ h1.header::after {
     }
 
     .schoolDesc > a.btn.btn-primary{
-       left:25%;
-       font-size: 20px;
-       width: 10rem;
-       height:3rem;
+       font-size: 15px;
+       width: 8rem;
+       height:2.5rem;
+       left:30%;
     }
 
      /*End of Schools*/
@@ -238,12 +238,73 @@ h1.header::after {
           font-weight: 300;
           font-style: italic;
           padding:0 5rem 0 5rem!important;
-
       }
 
-      .carousel-item.active,
+      .testimonialBy{
+          color:#E6E6E6;
+          font-family: 'Montserrat';
+          text-align: center;
+          font-size: 23px;
+          font-weight: 300;
+          left:200px;
+    }
+
       .carousel-item-next,
       .carousel-item-prev{
       display:flex;
      }
      /*End of Testimonials*/
+
+     /*Performances*/
+     .performances{
+         max-height: 1400px;
+     }
+     .performances h3{
+         color: #FFFFFF;
+         font-family: 'Montserrat';
+         font-size: 90px;
+     }
+
+     .col-lg-2> h3.text-left{
+         color:#0090FF;
+     }
+
+     footer{
+         background:#262626;
+         height: 135px;
+     }
+    /*End of Performances*/
+    /*Footer*/
+    
+    footer.container{
+        max-height:  6rem;
+    }
+     footer h4{
+         color:white;
+         font-family: 'Montserrat';
+         font-size: 15px;
+         font-weight: 500;
+     }
+
+     footer {
+        position: relative;
+      }
+
+      footer:before {
+        content:'';
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-height: 6rem;
+        height:100%;
+        width:100vw;
+        background-color: #262626;
+        background-size: cover;
+      }
+
+      footer a.btn.btn-primary{
+          left:65%;
+          background: linear-gradient(90deg, rgb(55, 105, 151) 0%, rgba(44,118,185,1) 35%, rgb(25, 83, 138) 100%);
+      }
+     /*End of Footer*/
