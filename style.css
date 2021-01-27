@@ -11,13 +11,13 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    position: unset;
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: .1rem;
     font-family: 'Montserrat';
     z-index: 10;
-    background-color: #00000050!important;
+    background-color: #08002400!important;
     /*whichever you want*/
     opacity: 1;
     /*0.5 determines transparency value*/
@@ -346,15 +346,15 @@ footer a.btn.btn-primary {
 
 /*End of Footer*/
 
-@media only screen and (max-width:1100px) {
+@media only screen and (min-width: 991px) {
     .navbar {
-        position: unset;
+        position: absolute;
         font-size: 1.3rem;
         font-weight: 500;
         letter-spacing: .1rem;
         font-family: 'Montserrat';
         z-index: 10;
-        background-color: #08002400!important;
+        background-color: #00000050!important;
         opacity: 1;
         filter: (opacity=1);
         width: 100%;
@@ -377,9 +377,13 @@ footer a.btn.btn-primary {
         text-shadow: 2px 2px 3px #000000;
         color: blue;
     }
+}
+
+@media only screen and (max-width:992px)
+{
     .carousel-caption {
         position: absolute;
-        top: 25%;
+        top: 10%;
         left: 3%;
         overflow: hidden;
     }
@@ -389,7 +393,7 @@ footer a.btn.btn-primary {
         text-shadow: 3px 2px 1px #000000;
     }
     .carousel-caption p {
-        font-size: 15px;
+        font-size: 20px;
         font-family: 'Montserrat';
         padding-top: 10px;
     }
@@ -399,4 +403,9 @@ footer a.btn.btn-primary {
         height: 40px;
         transform: translateX(-3%);
     }
+
+    .aboutUs p{
+        font-size: 20px;
+        text-align: justify;
+    };
 }
