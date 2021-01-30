@@ -170,7 +170,7 @@ h1.header::after {
     transform: translateX(-50%);
     height: 100%;
     width: 100vw;
-    background-image: url(/img/classes.png);
+    background-image: url(https://migggykun.github.io/TrockEnRoll2021/img/classes.png);
     background-size: cover;
 }
 
@@ -278,7 +278,7 @@ html {
     transform: translateX(-50%);
     height: 100%;
     width: 100vw;
-    background-image: url(/img/testimonials.png);
+    background-image: url(https://migggykun.github.io/TrockEnRoll2021/img/testimonials.png);
     background-size: cover;
 }
 
