@@ -1,72 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="aboutUs.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    </head>
-    <body>
-         <!--Navbar-->
-         <nav class="navbar bg-light navbar-light navbar-expand-lg">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand"><img src="/img/logo.png" alt="Logo" title="Logo"></a>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutUs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img src="/img/logo.png" alt="Logo" title="Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon">
                 </span>
                 </button>
 
-                <div id="navbarResponsive" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="aboutUs.html" class="nav-link active">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">Programs</a></li>
-                        <li class="nav-item"><a href="index.html" class="nav-link">Locations</a></li>
-                        <li class="nav-item"><a href="index.html" class="nav-link">Contact  </a></li>
-                        <span class="nav-indicator"></span>
-                    </ul>
-                </div>
+            <div id="navbarResponsive" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutUs.html" class="nav-link active">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Programs</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Locations</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Contact  </a></li>
+                    <span class="nav-indicator"></span>
+                </ul>
             </div>
-         </nav>
+        </div>
+    </nav>
     <!--End Navbar-->
 
     <!--Carousel-->
     <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="">
-    <div class="carousel-inner">
-        <div class="carousel-item active banner">
-         <img src="/img/aboutUs/headImage.png" alt="" class="w-100">
-         <div class="container">
-             <div class="carousel-caption header my-4">
-                 <div class="col-12">
-                     <h2>About Us</h2>
-                     <div class="headerDesc">
-                        <h3>Home > About Us</h3> 
-                     </div>
-                 </div>
-             </div>
-         </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active banner">
+                <img src="/img/aboutUs/headImage.png" alt="" class="w-100">
+                <div class="container">
+                    <div class="carousel-caption header my-4">
+                        <div class="col-12">
+                            <h2>About Us</h2>
+                            <div class="headerDesc">
+                                <h3>Home > About Us</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 
     <!--Why Us-->
     <div class="container whyUs">
         <div class="row py-2">
             <div class="col-md-12">
-                <h1 class="mb-3 headerWhite text-center ">About Us</h1>
+                <h1 class="mb-3 headerWhite text-center">Why Us?</h1>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-3 my-4 detail">
+                <row class="my-2">
+                    <h5>01. Easy Programs!</h5>
+                    <p>Sed nibh sapien, auctor nec eleifend in, Aliquam bibendum tempor ligula, id suscipit justo euismod quis</p>
+                </row>
+                <br>
+                <br>
+                <br>
+                <row>
+                    <h5>02. Experienced Teachers</h5>
+                    <p>Sed nibh sapien, auctor nec eleifend in, Aliquam bibendum tempor ligula, id suscipit justo euismod quis</p>
+                </row>
+            </div>
+            <div class="col-md-6 my-4 aboutUsImg text-center">
                 <img src="/img/aboutUs/musicNotes.png" alt="">
             </div>
+            <div class="col-md-3 my-4 detail">
+                <row class="my-2">
+                    <h5>03. Awards and Certificates</h5>
+                    <p>Sed nibh sapien, auctor nec eleifend in, Aliquam bibendum tempor ligula, id suscipit justo euismod quis</p>
+                </row>
+                <br>
+                <br>
+                <br>
+                <row>
+                    <h5>04. Affordable Prices</h5>
+                    <p>Sed nibh sapien, auctor nec eleifend in, Aliquam bibendum tempor ligula, id suscipit justo euismod quis</p>
+                </row>
+            </div>
         </div>
-    </div>
-    </body>
+
+        <!--About Us-->
+        <div class=" container my-3 aboutUs ">
+            <div class="row py-2">
+                <div class="col-md-12">
+                    <h1 class="mb-3 header text-center ">About Us</h1>
+                </div>
+            </div>
+            <div class="row my-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-5 col-md-7 mx-auto">
+                    <img src="https://migggykun.github.io/TrockEnRoll2021/img/aboutUs.png " alt="" class="w-100 ">
+                </div>
+                <div class="col-lg-7 col-md-12 mx-auto">
+                    <p class="my-3">
+                        Trock en Roll is a music school for all skill levels, ages, and musical aspirations. With students ranging from toddlers to adults, Trock en Roll is where music students grow into real musicians.
+                    </p>
+                    <div class="customButton">
+                        <a href="# " class="btn btn-primary  my-auto" role="button ">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of About Us-->
+</body>
+
 </html>

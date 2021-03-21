@@ -1,19 +1,20 @@
-.carousel-item.banner{
-    width: 100%; /* width of container */
-    height: 500px; /* height of container */
+.carousel-item.banner {
+    width: 100%;
+    /* width of container */
+    height: 500px;
+    /* height of container */
     overflow: hidden;
 }
 
-.carousel-item.banner img{
-   margin: -0px -100px 0px 0px !important;
+.carousel-item.banner img {
+    margin: -0px -100px 0px 0px !important;
 }
 
-.carousel-caption.header{
-    position:absolute;
-    top:60%;
-    left:-60%;
+.carousel-caption.header {
+    position: absolute;
+    top: 60%;
+    left: -60%;
     overflow: hidden;
-
 }
 
 .carousel-caption h2 {
@@ -22,9 +23,9 @@
     text-shadow: 3px 2px 1px #000000;
 }
 
-.headerDesc{
+.headerDesc {
     position: absolute;
-    left:44%;
+    left: 44%;
     margin-top: 3px;
 }
 
@@ -33,23 +34,22 @@
     font-family: 'Calibri';
 }
 
-.container.whyUs
-{
-    height:600px;
+.container.whyUs {
     background-color: white;
 }
-.container.whyUs:before {
-        content:'';
-        position: absolute; 
-        left: 50%;
-        transform: translateX(-50%);
-        height:100%;
-        width:100vw;
-        background-color: #ffffff;
-        background-size: cover;
-  }
 
-  h1{
+.container.whyUs:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100vw;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+h1.headerWhite {
     font-family: 'Rock Salt';
     color: #010825 !important;
     text-align: center;
@@ -66,4 +66,14 @@ h1.headerWhite::after {
     margin-left: 0;
     margin-right: 0;
     left: 37%;
+}
+
+.detail h5 {
+    font-family: 'Rock Salt';
+}
+
+.detail p {
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    font-size: 1rem;
 }
