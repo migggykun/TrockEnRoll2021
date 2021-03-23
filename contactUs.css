@@ -1,0 +1,18 @@
+.carousel-item.bannerContactUs {
+    width: 100%;
+    /* width of container */
+    height: 800px;
+    /* height of container */
+    overflow: hidden;
+}
+
+.carousel-caption.contactUsHeader {
+    position: absolute;
+    top: 70%;
+    overflow: hidden;
+}
+
+.contactInfo h2,p
+{
+    color:#FFF;
+}
