@@ -9,6 +9,7 @@
 .carousel-caption.contactUsHeader {
     position: absolute;
     top: 70%;
+    left:15%;
     overflow: hidden;
 }
 
@@ -25,4 +26,34 @@ padding:0;
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
+
+.nopadding h5{
+    color:#fff;
+    font-weight: 400;
+}
+
+p.text-center{
+    font-family: "Montserrat";
+    font-weight: lighter;
+}
+
+.formToFill
+{
+    background-color:rgba(243, 242, 242, 0.363);
+    border-radius: 5%;
+}
+
+.form-group label
+{
+    font-family: "Montserrat";
+    font-weight: 500;
+    color:white;
+}
+
+.formToFill h5
+{
+    font-family: "Montserrat";
+    font-weight: 500;
+    color:white;
+    font-size: 30px;
 }
